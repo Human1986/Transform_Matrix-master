@@ -5,8 +5,7 @@ import java.util.Arrays;
 public class MatrixUtil {
 
 	public static void transformMatrix(int[][] matrix) {
-		     if (matrixHasNull(matrix) || matrix[0].length != matrix[1].length || matrix.length % 2 != 0 ) {
-            System.out.println(Arrays.deepToString(matrix));
+		if (matrixHasNull(matrix) || matrix[0].length != matrix[1].length || matrix.length % 2 != 0) {
         } else {
             for (int i = 0; i < matrix.length; i++) {
                 for (int j = 0; j < matrix[i].length; j++) {
@@ -16,9 +15,6 @@ public class MatrixUtil {
                         matrix[i][j] = 0;
                     }
                 }
-            }
-            for (int[] ints : matrix) {
-                System.out.println(Arrays.toString(ints));
             }
         }
 	}
